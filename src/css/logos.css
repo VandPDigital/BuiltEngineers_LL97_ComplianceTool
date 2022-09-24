@@ -1,0 +1,30 @@
+.logo-akf {
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+	bottom: 5px;
+}
+
+.logo-beex {
+	/* position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+	top: 5px; */
+}
+
+.logo-nyc {
+	position: relative;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.footer .footer-logos {
+	position: relative;
+	top: 20px;
+	margin-left: 15px;
+	margin-right: 10px;
+}
+
+.footer .logo-akf {
+	margin-left: 40px;
+}

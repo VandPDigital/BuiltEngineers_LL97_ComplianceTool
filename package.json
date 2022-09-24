@@ -1,6 +1,7 @@
 {
   "name": "nyc-carbon",
   "version": "0.1.0",
+  "homepage": "https://pauldeggington.github.io/LL97_ComplianceTool_rev2/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.8",
@@ -40,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

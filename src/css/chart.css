@@ -3,7 +3,7 @@
 }
 
 .cost-container .y-axis path {
-	color: #b8d734;
+	color: #edcd1f;
 	stroke-width: 3px;
 }
 
@@ -88,7 +88,7 @@ svg text {
 	align-self: center;
 	vertical-align: middle;
 	padding: 10px;
-	background: #bad636;
+	background: #edcd1f;
 	border-radius: 8px;
 	margin-top: 5px;
 	margin-bottom: 5px;

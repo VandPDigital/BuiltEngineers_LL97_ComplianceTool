@@ -33,10 +33,10 @@
 	background-color: rgb(135, 135, 135);
 }
 .select-bldg-btn.active {
-	background-color: #bad636;
+	background-color: #edcd1f;
 }
 .select-bldg-btn.active:hover {
-	background-color: rgb(156, 182, 42);
+	background-color: #edcd1f;
 }
 
 .ok-dialog-btn-container {
@@ -47,7 +47,7 @@
 	width: 200px;
 	margin: 10px;
 	background-color: rgb(153, 153, 153);
-	background-color: #bad636;
+	background-color: #edcd1f;
 	color: white;
 	font-family: 'CircularStd-Bold';
 	border: none;
@@ -62,7 +62,7 @@
 }
 .ok-dialog-btn:hover {
 	background-color: rgb(135, 135, 135);
-	background-color: rgb(156, 182, 42);
+	background-color: #edcd1f;
 }
 
 .load-modal-results-table-container {

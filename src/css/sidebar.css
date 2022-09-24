@@ -176,12 +176,12 @@
 	padding: 0px;
 	padding-bottom: 5px;
 	vertical-align: middle;
-	background-color: #bad636;
+	background-color: #edcd1f;
 	border: none;
 }
 
 .add-building-type button:hover {
-	background-color: rgb(156, 182, 42);
+	background-color: #edcd1f;
 	transition: background-color 500ms;
 }
 

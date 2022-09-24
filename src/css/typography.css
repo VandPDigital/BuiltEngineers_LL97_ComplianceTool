@@ -5,8 +5,8 @@
   text-align: left;
   font-family: 'CircularStd-Bold';
   font-size: 20px;
-  border-top: 4px solid #BAD636;
-  border-bottom: 4px solid #BAD636;
+  border-top: 4px solid #edcd1f;
+  border-bottom: 4px solid #edcd1f;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-left: 20px;
@@ -36,7 +36,7 @@
   height: 4px;
   margin-top: 4px;
   width: 50px;
-  background-color: #bad636;
+  background-color: #edcd1f;
   display: block;
 }
 

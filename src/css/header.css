@@ -31,7 +31,7 @@
 	margin-right: 5px;
 }
 
-.header .header-logos {
+.header, .header-logos {
 	/* float: right; */
 }
 
@@ -88,11 +88,11 @@
 
 /* UI COMPONENTS */
 .demo-btn.demo-on {
-	background-color: #bad636;
+	background-color: #edcd1f;
 }
 
 .demo-btn.demo-on:hover {
-	background-color: rgb(156, 182, 42);
+	background-color: #edcd1f;
 }
 
 .demo-btn.demo-off {
@@ -105,7 +105,7 @@
 
 .demo-btn {
 	font-family: 'CircularStd-Bold';
-	background-color: #bad636;
+	background-color: #edcd1f;
 	border: none;
 	color: white;
 	padding: 12px 24px;
@@ -119,7 +119,7 @@
 
 .load-bldg-btn {
 	font-family: 'CircularStd-Bold';
-	background-color: #bad636;
+	background-color: #edcd1f;
 	border: none;
 	color: white;
 	padding: 12px 24px;
@@ -132,11 +132,11 @@
 }
 
 .load-bldg-btn.demo-on {
-	background-color: #bad636;
+	background-color: #edcd1f;
 }
 
 .load-bldg-btn.demo-on:hover {
-	background-color: rgb(156, 182, 42);
+	background-color: #edcd1f;
 }
 
 .load-bldg-btn.demo-off {
@@ -149,6 +149,6 @@
 
 .header .help-btn:hover {
 	cursor: pointer;
-	fill: rgb(156, 182, 42);
+	fill: edcd1f;
 	transition: background-color 500ms;
 }

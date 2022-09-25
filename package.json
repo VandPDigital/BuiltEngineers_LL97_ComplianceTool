@@ -1,7 +1,7 @@
 {
   "name": "nyc-carbon",
   "version": "0.1.0",
-  "homepage": "https://pauldeggington.github.io/LL97_ComplianceTool_rev2/",
+  "homepage": "https://VandPDigital.github.io/BuiltEngineers_LL97_ComplianceTool",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.9.8",

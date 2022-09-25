@@ -55,7 +55,6 @@ const App = (props) => {
       <UtilityRateModal />
       <SmallScreen />
       <div className="main-container">
-        <Header />
         <Sidebar />
         <CardLayout />
       </div>

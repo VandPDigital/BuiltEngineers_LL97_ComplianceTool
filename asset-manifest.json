@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/BuiltEngineers_LL97_ComplianceTool/static/css/main.573e6664.chunk.css",
+    "main.js": "/BuiltEngineers_LL97_ComplianceTool/static/js/main.5275db9c.chunk.js",
+    "main.js.map": "/BuiltEngineers_LL97_ComplianceTool/static/js/main.5275db9c.chunk.js.map",
+    "runtime-main.js": "/BuiltEngineers_LL97_ComplianceTool/static/js/runtime-main.414a8558.js",
+    "runtime-main.js.map": "/BuiltEngineers_LL97_ComplianceTool/static/js/runtime-main.414a8558.js.map",
+    "static/js/2.09997ce7.chunk.js": "/BuiltEngineers_LL97_ComplianceTool/static/js/2.09997ce7.chunk.js",
+    "static/js/2.09997ce7.chunk.js.map": "/BuiltEngineers_LL97_ComplianceTool/static/js/2.09997ce7.chunk.js.map",
+    "index.html": "/BuiltEngineers_LL97_ComplianceTool/index.html",
+    "precache-manifest.26d8fab150e3762504394d3c5351b11b.js": "/BuiltEngineers_LL97_ComplianceTool/precache-manifest.26d8fab150e3762504394d3c5351b11b.js",
+    "service-worker.js": "/BuiltEngineers_LL97_ComplianceTool/service-worker.js",
+    "static/css/main.573e6664.chunk.css.map": "/BuiltEngineers_LL97_ComplianceTool/static/css/main.573e6664.chunk.css.map",
+    "static/js/2.09997ce7.chunk.js.LICENSE.txt": "/BuiltEngineers_LL97_ComplianceTool/static/js/2.09997ce7.chunk.js.LICENSE.txt",
+    "static/media/CircularStd-Black.otf": "/BuiltEngineers_LL97_ComplianceTool/static/media/CircularStd-Black.7f42d848.otf",
+    "static/media/App.css": "/BuiltEngineers_LL97_ComplianceTool/static/media/CircularStd-Medium.4fcdd97f.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.414a8558.js",
+    "static/js/2.09997ce7.chunk.js",
+    "static/css/main.573e6664.chunk.css",
+    "static/js/main.5275db9c.chunk.js"
+  ]
+}

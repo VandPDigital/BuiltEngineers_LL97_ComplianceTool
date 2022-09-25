@@ -49,7 +49,7 @@ const App = (props) => {
 
   return (
     <React.Fragment>
-      <InfoModal />
+      
       <LoadBldgModal />
       <LoadConfirmDialog />
       <UtilityRateModal />

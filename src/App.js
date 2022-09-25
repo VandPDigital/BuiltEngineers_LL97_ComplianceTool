@@ -59,7 +59,6 @@ const App = (props) => {
         <Sidebar />
         <CardLayout />
       </div>
-      <Footer />
     </React.Fragment>
   );
 };

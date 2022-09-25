@@ -18,9 +18,6 @@ const SmallScreen = (props) => {
           please view on a larger device, increase window size or decrease
           browser zoom.
         </div>
-        <div style={{ marginLeft: 20, marginTop: 20 }}>
-          <BeExLogo props={{ width: "150px", height: "75px" }} />
-        </div>
       </div>
     </div>
   );

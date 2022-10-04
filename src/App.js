@@ -57,6 +57,7 @@ const App = (props) => {
       <div className="main-container">
         <Sidebar />
         <CardLayout />
+        <Footer />
       </div>
     </React.Fragment>
   );

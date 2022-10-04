@@ -1,10 +1,10 @@
 import React from "react";
+import { saveAs, encodeBase64 } from '@progress/kendo-file-saver';
+import { saveAs } from '@progress/kendo-file-saver';
 
 
-
-const Footer = (props) => {
-  const   retrofiturl =
-    "https://www1.nyc.gov/site/nycaccelerator/index.page?utm_source=BEEx&utm_medium=LL97_Calc&utm_campaign=Evergreen";
+function Footer(props) {
+  const retrofiturl = "https://www1.nyc.gov/site/nycaccelerator/index.page?utm_source=BEEx&utm_medium=LL97_Calc&utm_campaign=Evergreen";
   const akfurl = "http://www.akfgroup.com";
 
   return (
@@ -18,7 +18,7 @@ const Footer = (props) => {
       </div>
     </div>
   );
-};
+}
 
 
 

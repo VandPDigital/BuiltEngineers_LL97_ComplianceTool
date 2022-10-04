@@ -9,6 +9,8 @@ import SmallScreen from "./components/smallscreen.js";
 import LoadBldgModal from "./components/loadbldgmodal";
 import LoadConfirmDialog from "./components/loadconfirmdialog";
 import UtilityRateModal from "./components/utilityratemodal";
+import { saveAs, encodeBase64 } from '@progress/kendo-file-saver';
+import { saveAs } from '@progress/kendo-file-saver';
 
 import { conn } from "./store/connect";
 

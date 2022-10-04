@@ -1,6 +1,5 @@
 import React from "react";
 import { saveAs, encodeBase64 } from '@progress/kendo-file-saver';
-import { saveAs } from '@progress/kendo-file-saver';
 
 
 function Footer(props) {

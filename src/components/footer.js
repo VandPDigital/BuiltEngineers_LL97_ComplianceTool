@@ -11,7 +11,7 @@ const Footer = (props) => {
     <div className="footer">
       <div className="footer-left">
         <p>
-          Download Dynamically Genereated File   <input type="button" id="dwn-btn" value="Download"/>
+          Download Dynamically Genereated File   {/*<input type="button" id="dwn-btn" value="Download"/>*/}
         </p>
       </div>
       <div className="footer-right">

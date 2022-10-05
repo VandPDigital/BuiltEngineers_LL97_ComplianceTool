@@ -57,6 +57,7 @@ const buttonStyle = {
   padding: "10px",
   margin: "10px",
   fontFamily: "Arial",
+  fontWeight: "bold",
   borderRadius: "5px",
   border: "0px"
 }

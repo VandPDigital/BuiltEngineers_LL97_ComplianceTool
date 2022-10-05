@@ -96,7 +96,7 @@ const saveAs = (blob, fileName) =>{
 }
   
   return (
-    <div id="main-container">
+    <div id="main-container" allowtaint="true" foreignobjectrendering="true">
       <React.Fragment>
         <LoadBldgModal />
         <LoadConfirmDialog />

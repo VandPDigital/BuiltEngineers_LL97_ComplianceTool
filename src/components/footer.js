@@ -63,7 +63,7 @@ const buttonStyle = {
 }
 
       return (
-          <div className="footer"  >
+          <div className="footer" data-html2canvas-ignore >
             <div className="footer-left">
               <p>
                 Download Dynamically Generated File 

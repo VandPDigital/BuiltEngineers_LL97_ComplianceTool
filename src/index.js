@@ -52,6 +52,7 @@ if (!Array.prototype.map) {
 	};
 }
 
+
 ReactDOM.render(
 	<>
 		<Provider store={store}>
@@ -61,5 +62,6 @@ ReactDOM.render(
 	document.getElementById('root')
 );
 serviceWorker.unregister();
+
 
 export { store };

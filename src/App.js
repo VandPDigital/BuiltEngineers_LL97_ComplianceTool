@@ -1,14 +1,13 @@
 import React, { useEffect } from "react";
 import Sidebar from "./components/sidebar.js";
 import CardLayout from "./components/cardlayout";
-import Header from "./components/header.js";
-import InfoModal from "./components/infomodal.js";
-import { Footer } from "./components/footer.js";
-import SmallScreen from "./components/smallscreen.js";
 
+import SmallScreen from "./components/smallscreen.js";
 import LoadBldgModal from "./components/loadbldgmodal";
 import LoadConfirmDialog from "./components/loadconfirmdialog";
 import UtilityRateModal from "./components/utilityratemodal";
+import { Footer } from "./components/footer.js";
+import html2canvas from 'html2canvas'
 
 import { conn } from "./store/connect";
 
@@ -46,20 +45,71 @@ const App = (props) => {
       props.actions.setIsSmallScreen(false);
     }
   }, [dims, props.actions]);
+  
+  const exportAsPicture = () => {
+    var html = document.getElementsByTagName('HTML')[0]
+    var body =  document.getElementsByTagName('BODY')[0]
+    var htmlWidth = html.clientWidth;
+    var bodyWidth = body.clientWidth;
+    
+    var data = document.getElementById('main-container')
+    var newWidth = data.scrollWidth - data.clientWidth
 
+    
+    if (newWidth > data.clientWidth){
+        htmlWidth += newWidth 
+        bodyWidth += newWidth
+    }
+    
+    html.style.width = htmlWidth + 'px'
+    body.style.width = bodyWidth + 'px'
+
+    
+    html2canvas(data).then((canvas)=>{
+        var image = canvas.toDataURL('image/png', 1.0);
+        return image
+    }).then((image)=>{
+        saveAs(image, 'exported-vis.png') 
+        html.style.width = null
+        body.style.width = null
+    })
+}
+
+const saveAs = (blob, fileName) =>{
+    var elem = window.document.createElement('a');
+    elem.href = blob
+    elem.download = fileName;
+    elem.style = 'display:none;';
+    (document.body || document.documentElement).appendChild(elem);
+    if (typeof elem.click === 'function') {
+        elem.click();
+    } else {
+        elem.target = '_blank';
+        elem.dispatchEvent(new MouseEvent('click', {
+        view: window,
+        bubbles: true,
+        cancelable: true
+        }));
+    }
+    URL.revokeObjectURL(elem.href);
+    elem.remove()
+}
+  
   return (
-    <React.Fragment>
-      
-      <LoadBldgModal />
-      <LoadConfirmDialog />
-      <UtilityRateModal />
-      <SmallScreen />
-      <div className="main-container">
-        <Sidebar />
-        <CardLayout />
-        <Footer />
-      </div>
-    </React.Fragment>
+    <div id="main-container">
+      <React.Fragment>
+        <LoadBldgModal />
+        <LoadConfirmDialog />
+        <UtilityRateModal />
+        <SmallScreen />
+          <div className="main-container" >
+            <Sidebar />
+            <CardLayout />
+            <Footer />
+              {/*<input type='button' id='but_screenshot' value='Take screenshot' onClick={exportAsPicture}></input>*/}
+          </div>
+      </React.Fragment>
+    </div>
   );
 };
 
@@ -68,5 +118,7 @@ const mapStateToProps = (state) => {
     dims: state.ui.dims,
   };
 };
+
+
 
 export default conn(mapStateToProps)(App);

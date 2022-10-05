@@ -25,7 +25,7 @@ const Footer = () =>{
         var image = canvas.toDataURL('image/png', 1.0);
         return image
     }).then((image)=>{
-        saveAs(image, 'exported-vis.png') 
+        saveAs(image, '2024_LL97_Compliance_Fillout.png') 
         html.style.width = null
         body.style.width = null
     })
@@ -51,15 +51,27 @@ const saveAs = (blob, fileName) =>{
     elem.remove()
 }
 
+const buttonStyle = {
+  color: "dark gray",
+  backgroundColor: "#edcd1f",
+  padding: "10px",
+  margin: "10px",
+  fontFamily: "Arial",
+  borderRadius: "5px",
+  border: "0px"
+}
+
       return (
           <div className="footer"  >
             <div className="footer-left">
               <p>
-                Download Dynamically Genereated File   {/*<input type="button" id="dwn-btn" value="Download"/>*/}
+                Download Dynamically Genereated File 
+                <button onClick={exportAsPicture} style={buttonStyle} >Download Screenshot</button>
+                {/*<input type="button" id="dwn-btn" value="Download"/>*/}
               </p>
-              <div>
-                <button onClick={exportAsPicture}>screenshot</button>
-              </div>
+              
+                
+              
             </div>
             <div className="footer-right">
             </div>

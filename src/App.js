@@ -69,7 +69,7 @@ const App = (props) => {
         var image = canvas.toDataURL('image/png', 1.0);
         return image
     }).then((image)=>{
-        saveAs(image, 'exported-vis.png') 
+        saveAs(image, '2024_LL97_Compliance_Fillout.png') 
         html.style.width = null
         body.style.width = null
     })

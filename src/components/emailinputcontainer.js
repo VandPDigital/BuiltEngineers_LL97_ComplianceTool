@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
 import { conn } from "../store/connect";
-import AddressInput from "./addressinput";
+import EmailInput from "./emailinput.js";
 
 const useStyles = makeStyles({
   root: {},
@@ -11,7 +11,7 @@ const useStyles = makeStyles({
   },
 });
 
-const AddressInputContainer = (props) => {
+const EmailInputContainer = (props) => {
   const { isDefaultRates } = props;
   const classes = useStyles();
 
@@ -32,7 +32,7 @@ const AddressInputContainer = (props) => {
   return (
     <>
       <div className="utility-input-main-container">
-        <AddressInput
+        <EmailInput
           title="Building Address"
           cons_title="kWh"
           utiltag="elec"
@@ -51,4 +51,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default conn(mapStateToProps)(AddressInputContainer);
+export default conn(mapStateToProps)(EmailInputContainer);

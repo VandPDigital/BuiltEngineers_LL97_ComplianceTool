@@ -65,7 +65,7 @@ const buttonStyle = {
           <div className="footer"  >
             <div className="footer-left">
               <p>
-                Download Dynamically Genereated File 
+                Download Dynamically Generated File 
                 <button onClick={exportAsPicture} style={buttonStyle} >Download Screenshot</button>
                 {/*<input type="button" id="dwn-btn" value="Download"/>*/}
               </p>
